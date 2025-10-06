@@ -52,8 +52,9 @@ MoodSip is designed to make **hydration smarter** and help you manage stress.
 Most smart bottles only remind you to drink; **MoodSip also senses emotions** and adapts its reminders when you seem stressed, hot, or haven't had enough water.
 
 <div align="center">
-  <img src="1-mood-sip/assets/moodsip-architecture.png" alt="MoodSip System Architecture" width="700" />
+  <img src="1-mood-sip/assets/classification-model.png" alt="Classification Model Diagram" width="600" />
 </div>
+
 
 ### 🎨 MoodSip Design Concept
 
@@ -77,6 +78,30 @@ Most smart bottles only remind you to drink; **MoodSip also senses emotions** an
 - Mild dehydration reduces focus, increases fatigue, irritability, and cortisol spikes.
 - Proper hydration = Better physical & mental health.
 - Technology can help, but current solutions miss the mind-body connection – **MoodSip fills that gap!**
+
+
+---
+
+## 👩‍💻 How It Works
+
+
+<div align="center">
+  <img src="1-mood-sip/assets/moodsip-architecture.png" alt="MoodSip System Architecture" width="700" />
+</div>
+
+### 1. Facial Expressions (Stress Detection)
+- Arduino Nicla Vision camera uses FocoosAI model to detect stress (furrowed brows, tired eyes).
+- Stressed? LED turns **red** & reminder timer shortens.
+
+### 2. Ambient Temperature & Humidity
+- Sensor triggers more frequent reminders when hot/humid.
+
+### 3. Intake Tracking
+- Proximity and gyroscope sensors estimate water intake.
+- Less intake? Next reminder comes sooner.
+
+> **All logic runs onboard using Edge AI (fully offline).**
+
 
 ---
 
@@ -103,89 +128,31 @@ Most smart bottles only remind you to drink; **MoodSip also senses emotions** an
 - **Interactive LED:** Visual feedback — red for stress, blue to prompt drinking.
 - **Completely Offline:** All intelligence runs on Arduino Nicla Vision, no internet required.
 
-<div align="center">
-  <img src="1-mood-sip/assets/classification-model.png" alt="Classification Model Diagram" width="600" />
-</div>
-
----
-
-## ⚡ Quick Start
-
-### 🖥️ Web Application
-```bash
-# Clone the repository
-git clone https://github.com/FrigaZzz/mood-sip.git
-cd mood-sip/1-mood-sip/src/mood-sip-web
-
-# Install dependencies and start
-npm install
-npm run dev
-```
-
-### 🤖 Edge AI Engine
-```bash
-# Navigate to edge engine
-cd 1-mood-sip/src/edge_vision_engine
-
-# Set up Python environment
-uv sync
-source .venv/bin/activate
-
-# Run the AI service
-python main.py
-```
-
-### 🔧 Arduino Setup
-1. Flash the `.ino` sketch to Arduino Nicla Vision
-2. Deploy the quantized ONNX model using Zant
-3. Connect sensors and test the system
-
-> 📖 **Detailed setup guide:** [Technical Documentation](1-mood-sip/docs/software.md)
-
 ---
 
 ## 🥤 Fun Mode: The Party Game
 
 <div align="center">
-  <img src="1-mood-sip/assets/screeshot/fun.png" alt="Fun Mode Interface" width="400" />
+  <table>
+    <tr>
+      <td align="center" width="50%">
+      <img src="1-mood-sip/assets/screeshot/fun.png" alt="Fun Mode Interface" width="250" />
   <br /><i>Interactive party game mode - keep a straight face or take a sip!</i>
+      </td>
+      <td align="center" width="50%">
+         <img src="1-mood-sip/assets/screeshot/gamification.png" alt="Gamification Features" width="250" />
+  <br /><i>Engaging gamification elements make wellness tracking fun and rewarding</i>
+      </td>
+    </tr>
+  </table>
 </div>
+
 
 MoodSip doubles as a party game!
 - Keep a poker face; if the camera detects a smile or emotional change, **red LED** lights up and you "lose" – take a sip!
 - Brings together social interaction and wellness awareness.
 - Perfect for parties, team building, or just having fun with friends!
 
----
-
-## 🏆 Project Impact
-
-- Encourages public health: hydration + stress management.
-- Supports well-being for elderly, professionals, athletes.
-- Promotes *holistic* wellness — understanding the mind-body connection.
-- Potential to reduce dehydration-related health issues.
-
-<div align="center">
-  <img src="1-mood-sip/assets/screeshot/gamification.png" alt="Gamification Features" width="400" />
-  <br /><i>Engaging gamification elements make wellness tracking fun and rewarding</i>
-</div>
-
----
-
-## 👩‍💻 How It Works
-
-### 1. Facial Expressions (Stress Detection)
-- Arduino Nicla Vision camera uses FocoosAI model to detect stress (furrowed brows, tired eyes).
-- Stressed? LED turns **red** & reminder timer shortens.
-
-### 2. Ambient Temperature & Humidity
-- Sensor triggers more frequent reminders when hot/humid.
-
-### 3. Intake Tracking
-- Proximity and gyroscope sensors estimate water intake.
-- Less intake? Next reminder comes sooner.
-
-> **All logic runs onboard using Edge AI (fully offline).**
 
 ---
 
@@ -219,16 +186,41 @@ MoodSip doubles as a party game!
 - [5 Best Smart Water Bottles of 2024](#)
 - **Existing products:** HidrateSpark, REBO — track water, but **MoodSip** tracks mood too!
 
----
 
-<div align="center">
-  <img src="1-mood-sip/assets/screeshot/settings.png" alt="Settings Configuration" width="400" />
-  <br /><i>Comprehensive settings panel for personalized wellness tracking</i>
-</div>
+---
 
 ## 📝 Technical Overview
 
-For full technical documentation [see here](1-mood-sip/docs/software.md).
+### 🖥️ Web Application
+```bash
+# Clone the repository
+git clone https://github.com/FrigaZzz/mood-sip.git
+cd mood-sip/1-mood-sip/src/mood-sip-web
+
+# Install dependencies and start
+npm install
+npm run dev
+```
+
+### 🤖 Edge AI Engine
+```bash
+# Navigate to edge engine
+cd 1-mood-sip/src/edge_vision_engine
+
+# Set up Python environment
+uv sync
+source .venv/bin/activate
+
+# Run the AI service
+python main.py
+```
+
+### 🔧 Arduino Setup
+1. Flash the `.ino` sketch to Arduino Nicla Vision
+2. Deploy the quantized ONNX model using Zant
+3. Connect sensors and test the system
+
+> 📖 **Detailed setup guide:** [Technical Documentation](1-mood-sip/docs/software.md)
 
 ---
 
