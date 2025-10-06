@@ -1,0 +1,81 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints and outputs
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+*.nbconvert.pdf
+*.nbconvert.html
+
+# Distribution / packaging (if any)
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Environment and config
+.env
+.env.*
+*.env
+*.env.*
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Uvicorn/Poetry/UV lock files (if used)
+uv.lock
+poetry.lock
+
+# pyenv
+.python-version
+
+# Coverage/test
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.pytest_cache/
+.hypothesis/
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Security/sensitive files and keys
+*.pem
+*.key
+*.crt
+
+# Data/cache/output (edit/remove if required)
+*.csv
+*.tsv
+*.h5
+*.jsonl
+*.parquet
+*.pkl
+*.dat
+
+# Mac system files
+.AppleDouble
+.LSOverride
+
+# Miscellaneous
+*.bak
