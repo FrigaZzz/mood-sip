@@ -13,7 +13,7 @@
 <div align="center">
   
 [![🎥 Demo Video](https://img.shields.io/badge/🎥_Demo-Video-red?style=for-the-badge)](https://youtu.be/YI3l9gEI9GM)
-[![🏆 Hackathon](https://img.shields.io/badge/🏆_Tinity-Hack_2025-blue?style=for-the-badge)](#-hackathon-challenge-tinity-hack-2025)
+[![🏆 Hackathon](https://img.shields.io/badge/🏆_Tiny-Hack_2025-blue?style=for-the-badge)](#-hackathon-challenge-tinity-hack-2025)
 [![🤖 Edge AI](https://img.shields.io/badge/🤖_Edge-AI_Powered-green?style=for-the-badge)](#️-technologies)
 [![📱 Web App](https://img.shields.io/badge/📱_Web-App-purple?style=for-the-badge)](#-features)
 
