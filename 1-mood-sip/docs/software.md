@@ -47,6 +47,28 @@ The deployment was carried out using Z-Ant.
 - **Bluetooth Low Energy** – Enables communication from the Nicla Vision board.
 - **Motion & Orientation** – Accelerometer and gyroscope track shaking and tilting to understand when the user is drinking.
 
+---
+
+## Source Structure (`1-mood-sip/src`)
+
+```
+├── MoodSip/
+├── cloud_inference/
+├── edge_vision_engine/
+├── model_info.json
+├── mood-sip-web/
+├── moodsip.ino
+└── moodsip.onnx
+```
+
+- **MoodSip/**: Arduino firmware logic and resources.
+- **cloud_inference/**: Notebooks and scripts for training/quantizing models (cloud-side).
+- **edge_vision_engine/**: Python-based edge AI engine implementation.
+- **model_info.json**: Metadata for the on-device ML model (parameters, architecture).
+- **mood-sip-web/**: Web application for device interaction/visualization.
+- **moodsip.ino**: Main Arduino sketch (entry point).
+- **moodsip.onnx**: Quantized neural network model deployed to the device.
+
 ## Software Stack
 
 | Layer             | Technology       | Purpose                                               |
