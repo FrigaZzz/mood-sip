@@ -13,7 +13,7 @@
 <div align="center">
   
 [![🎥 Demo Video](https://img.shields.io/badge/🎥_Demo-Video-red?style=for-the-badge)](https://youtu.be/YI3l9gEI9GM)
-[![🏆 Hackathon](https://img.shields.io/badge/🏆_Tiny-Hack_2025-blue?style=for-the-badge)](#-hackathon-challenge-tinity-hack-2025)
+[![🏆 Hackathon](https://img.shields.io/badge/🏆_Tiny-Hack_2025-blue?style=for-the-badge)](#-hackathon-challenge-tiny-hack-2025)
 [![🤖 Edge AI](https://img.shields.io/badge/🤖_Edge-AI_Powered-green?style=for-the-badge)](#️-technologies)
 [![📱 Web App](https://img.shields.io/badge/📱_Web-App-purple?style=for-the-badge)](#-features)
 
@@ -224,13 +224,13 @@ python main.py
 
 ---
 
-## 🏅 Hackathon Challenge: Tinity Hack 2025
+## 🏅 Hackathon Challenge: Tiny Hack 2025
 
 <div align="center">
-  <img src="https://img.shields.io/badge/🏆_Hackathon-Tinity_Hack_2025-gold?style=for-the-badge" alt="Tinity Hack 2025" />
+  <img src="https://img.shields.io/badge/🏆_Hackathon-Tiny_Hack_2025-gold?style=for-the-badge" alt="Tiny Hack 2025" />
 </div>
 
-**MoodSip was developed for the Tinity Hack [Tiny Hacks] Edge AI Hackathon!**
+**MoodSip was developed for the Tiny Hack Edge AI Hackathon!**
 
 ### 🎯 Challenge Requirements
 - ✅ **Creative Computer Vision App** using Focoos platform
@@ -252,7 +252,7 @@ python main.py
 - 📖 Comprehensive documentation and setup guides
 - 🎨 AI-generated prototype designs
 
-> 🙏 **Special thanks** to the Tinity Hack organizers for an inspiring challenge!
+> 🙏 **Special thanks** to the Tiny Hack organizers for an inspiring challenge!
   
 ---
 
