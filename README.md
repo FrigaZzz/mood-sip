@@ -48,7 +48,7 @@
 
 ## 🎖️ About This Project
 
-MoodSip is designed to make **hydration smarter** and help you manage stress.  
+MoodSip is designed to make **hydration smarter** and help you manage stressƒ.  
 Most smart bottles only remind you to drink; **MoodSip also senses emotions** and adapts its reminders when you seem stressed, hot, or haven't had enough water.
 
 <div align="center">
@@ -224,7 +224,7 @@ python main.py
 
 ---
 
-## 🏅 Hackathon Challenge: Tiny Hack 2025
+## 🏅 Hackathon Challenge: Tiny Hack 2025 3RD PLACE
 
 <div align="center">
   <img src="https://img.shields.io/badge/🏆_Hackathon-Tiny_Hack_2025-gold?style=for-the-badge" alt="Tiny Hack 2025" />
@@ -238,12 +238,6 @@ python main.py
 - ✅ **Arduino Nicla Vision** as target hardware
 - ✅ **Zant Integration** for model flashing
 
-### 🏆 Competition Categories
-| Trophy | Category | Description |
-|:---:|:---|:---|
-| 🏆 | **Impact Trophy** | Most innovative application |
-| 💻 | **Clean Code Champion** | Best software engineering |
-| 🚀 | **Technical Trophy** | Most impressive technical solution |
 
 ### 📦 Our Submission
 - 🔧 Arduino `.ino` sketch with sensor integration
