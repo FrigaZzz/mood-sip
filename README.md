@@ -25,7 +25,7 @@
 
 <div align="center">
   
-**👨‍💻 Built by:** [@pitadagosti](https://github.com/pitdagosti) • [@davmacario](https://github.com/davmacario) • [@FrigaZzz](https://github.com/frigazzz)
+**👨‍💻 Built by:** [@FrigaZzz](https://github.com/frigazzz) • [@pitadagosti](https://github.com/pitdagosti) • [@davmacario](https://github.com/davmacario) 
 
 </div>
 
