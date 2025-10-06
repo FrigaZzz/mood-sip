@@ -1,0 +1,8 @@
+{
+  // Always use this Python interpreter in VSCode for MODEL
+  "python.defaultInterpreterPath": "${workspaceFolder}/1-mood-sip/src/edge_vision_engine/.venv/bin/python",
+  // This helps Python tools and the debugger pick the right env
+  "python.terminal.activateEnvironment": true,
+  // (Optional) Make sure TypeScript/JavaScript uses node_modules from the project root, not src/
+  "typescript.tsdk": "${workspaceFolder}1-mood-sip/src/mood-sip-web/node_modules/typescript/lib"
+}

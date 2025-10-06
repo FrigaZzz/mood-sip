@@ -12,7 +12,7 @@ import uvicorn
 
 from app.app_factory import create_app
 from app.config import settings
-
+import os
 app = create_app()
 
 

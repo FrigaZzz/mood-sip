@@ -1,4 +1,6 @@
+from dotenv import load_dotenv
 import os
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"))
 from dataclasses import dataclass, field
 
 

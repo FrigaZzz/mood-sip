@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Droplets, Camera, Clock } from 'lucide-react';
-import { API_BASE_URL, DEFAULT_MODEL } from './config';
-import { useNotifications } from './hooks/useNotifications';
-import { useCameraCapture } from './hooks/useCameraCapture';
-import { useBluetoothFrames } from './hooks/useBluetoothFrames';
-import { analyzeWithOllama, checkBackendHealth } from './services/ai';
-import { formatTime } from './utils';
-import type { MoodAnalysis } from './types';
-import NotificationFeed from './components/NotificationFeed';
-import MoodResult from './components/MoodResult';
-import DebugTools from './components/DebugTools';
+import DebugTools from '../components/DebugTools';
+import MoodResult from '../components/MoodResult';
+import NotificationFeed from '../components/NotificationFeed';
+import { API_BASE_URL, DEFAULT_MODEL } from '../config';
+import { useBluetoothFrames } from '../hooks/useBluetoothFrames';
+import { useCameraCapture } from '../hooks/useCameraCapture';
+import { useNotifications } from '../hooks/useNotifications';
+import { checkBackendHealth, analyzeWithOllama } from '../services/ai';
+import { MoodAnalysis } from '../types';
+import { formatTime } from '../utils';
 
-export default function MoodSipApp() {
+
+export default function DevUI() {
 
   // BLE connection state is provided by the hook
   const [sipCount, setSipCount] = useState<number>(0);

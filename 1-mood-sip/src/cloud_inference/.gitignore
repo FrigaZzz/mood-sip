@@ -2,6 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
+*.pytest_cache
+*.mypy_cache/
+*.pyc
+*.pyd
 
 # Jupyter Notebook checkpoints and outputs
 .ipynb_checkpoints/

@@ -1,6 +1,6 @@
 // Centralized configuration for the webapp
 
-export const API_BASE_URL = 'https://10.100.16.79:8001';
+export const API_BASE_URL = 'https://192.168.1.70:8001';
 export const DEFAULT_MODEL = 'gemini';
 
 // BLE UUIDs (service and characteristics)
